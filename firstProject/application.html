@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="application">
+    <h1>Submit Your Application</h1>
+    <form action="post" id="application-form">
+        <div>
+            <label for="name">Name: </label><br>
+            <input type="text" id="name" name="name"><br><br>
+        </div>
+        <div>
+            <label for="email">Email Address: </label><br>
+            <input type="email" id="email" name="email"><br><br>
+        </div>
+        <div>
+            <label for="phone">Phone:</label><br>
+            <input type="tel" id="phone" name="phone"><br><br>
+        </div>
+        <div>
+            <label for="position">Position Applied</label><br>
+            <select id="position" name="position">
+                <option value="">Select Option</option>
+                <option value="Web Developer">Web Developer</option>
+                <option value="Data Scientist">Data Scientist</option>
+                <option value="Graphic Designer">Graphic Designer</option>
+            </select>
+        </div>
+        <div><br>
+            <!-- upload resume -->
+            <label for="resume">Upload Resume (PDF):</label>
+            <input type="file" accept=".pdf" id="resume" name="resume"><br><br>
+        </div>
+        <div id="cover-letter">   
+            <label for="cover">Cover letter</label>
+            <br>
+            <textarea name="cover-letter" id="cover" cols="30" rows="8"></textarea>
+        </div>
+        <div>
+            <br>
+            <input type="checkbox" value="checkbox"> I agree to the terms and conditions.<br>
+                    <!--submit the form  -->
+                   <div id="submit"> <br>  <input type="submit" value="Submit"></div>
+                </div>
+        
+    </form>
+</div>
+</body>
+</html>
